@@ -10,13 +10,6 @@ from torchvision import datasets
 
 
 def complex_cosine_similarity(z, w):
-    """
-    计算两个复数向量的余弦相似度（绝对值版本）
-    参数:
-        z, w: 一维numpy数组，元素为复数
-    返回:
-        相似度 (0到1之间的实数)
-    """
     # 步骤1 & 2: 计算埃尔米特内积 (np.vdot 自动对第二个参数取共轭)
     inner_product = np.vdot(z, w)  # 等价于 np.dot(z.conj(), w)
 
