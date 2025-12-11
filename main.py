@@ -40,7 +40,7 @@ are_equal = np.array_equal(eigenvectors2, eigenvectors)
 
 print("两个二维数组完全相同:", are_equal)
 # 计算欧氏距离
-distances = np.linalg.norm(eigenvectors - eigenvectors2, axis=1)
+distances = np.linalg.norm(eigenvectors - eigenvectors2, axis=0)
 
 # 找到最小距离的行索引
 closest_index = np.argmin(distances)
